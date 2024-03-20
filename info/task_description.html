@@ -1,18 +1,21 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Flavinho criou um jogo de tabuleiro que consiste em preencher um tabuleiro de N linhas e N colunas com pedras brancas e pretas. As células da primeira linha e da primeira coluna são preenchidas aleatoriamente com pedras brancas (0) ou pretas (1), servindo como sementes. As demais células são preenchidas seguindo a regra de que a cor de uma célula depende da cor das três células adjacentes a ela. Se houver mais pedras brancas do que pretas entre as células adjacentes, a célula será preenchida com uma pedra preta, e vice-versa. Seu programa deve calcular a cor da pedra na célula (N,N). </p>
+<img  title="example" src="{{MEDIA}}tabuleiro.png" alt="example" style="max-height: 300px"/><p>
+Um tabuleiro 6x6 está indicado acima.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Uma lista onde o primeiro elemento é um inteiro N representando o número de linhas e colunas do tabuleiro. Os elementos subsequentes são listas de 
+N inteiros cada, representando as linhas do tabuleiro inicial. Os inteiros na primeira linha e na primeira coluna são 0 (pedra branca) ou 1 (pedra preta), e os demais inteiros são 9, indicando células vazias.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Um inteiro representando a cor da pedra na célula (N,N): 0 para branca, 1 para preta.
 </p>
 
 
@@ -28,7 +31,16 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    jogo_tabuleiro(2, [[0, 1], [1, 9]]) >> 0
+
+jogo_tabuleiro(6, [
+[0, 0, 1, 0, 0, 0], 
+[1, 9, 9, 9, 9, 9], 
+[0, 9, 9, 9, 9, 9], 
+[0, 9, 9, 9, 9, 9], 
+[1, 9, 9, 9, 9, 9], 
+[1, 9, 9, 9, 9, 9]
+]) >> 1
 </pre>
 {% endif %}
 </div>

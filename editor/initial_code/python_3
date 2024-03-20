@@ -1,1 +1,23 @@
-{{CODIGO INICIAL}}
+def jogo_tabuleiro(N, tabuleiro):
+    # Seu código aqui
+    return None
+
+print("Example:")
+print(jogo_tabuleiro(2, [[0, 1], [1, 9]]))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+
+assert jogo_tabuleiro(2, [[0, 1], [1, 9]]) == 0
+
+assert jogo_tabuleiro(6, 
+[
+[0, 0, 1, 0, 0, 0], 
+[1, 9, 9, 9, 9, 9], 
+[0, 9, 9, 9, 9, 9], 
+[0, 9, 9, 9, 9, 9], 
+[1, 9, 9, 9, 9, 9], 
+[1, 9, 9, 9, 9, 9]
+]) == 1
+
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
